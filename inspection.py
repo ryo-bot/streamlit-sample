@@ -41,7 +41,7 @@ def main():
 
         username = st.sidebar.text_input("ユーザー名を入力")
         password = st.sidebar.text_input("パスワードを入力")
-        if st.sidebar.checkbox("LOGIN"):
+        if st.sidebar.button("LOGIN"):
             create_user()
             hashed_pswd = make_hashes(password)
 
